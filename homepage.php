@@ -11,7 +11,7 @@
   <title>Home | FoodEdge</title>
   <style>
     .slide1 {
-      background-image: url('homeslide1.png');
+      background-image: url('images/homeslide1.png');
       height: 750px;
       background-repeat: no-repeat;
       background-position: center;
@@ -19,7 +19,7 @@
     }
 
     .slide2 {
-      background-image: url('homeslide2.png');
+      background-image: url('images/homeslide2.png');
       height: 750px;
       background-repeat: no-repeat;
       background-position: center;
@@ -27,7 +27,7 @@
     }
 
     .slide3 {
-      background-image: url('homeslide3.png');
+      background-image: url('images/homeslide3.png');
       height: 750px;
       background-repeat: no-repeat;
       background-position: center;
@@ -80,7 +80,7 @@
     }
 
     #fixedImage {
-      background-image: url("fixed.jpeg");
+      background-image: url("images/fixed.jpeg");
       background-size: cover;
       background-attachment: fixed;
       height: 30%;
@@ -172,7 +172,7 @@
       </div>
       <div class="col-md-4">
         <div class="card" style="width: 20rem;">
-          <img class="card-img-top" src="menua.gif" alt="Card image cap">
+          <img class="card-img-top" src="images/menua.gif" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title"> Menu B</h5>
             <p class="card-text"> This is Malay Cursine</p>
@@ -182,7 +182,7 @@
       </div>
       <div class="col-md-4">
         <div class="card" style="width: 20rem;">
-          <img class="card-img-top" src="menua.gif" alt="Card image cap">
+          <img class="card-img-top" src="images/menua.gif" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title"> Menu C</h5>
             <p class="card-text"> This is Indian Cursine</p>
@@ -213,7 +213,7 @@
     <div class="row padding">
       <div class="col-md-4">
         <div class="card">
-          <img class="card-img-top" src="whychooseus.png" alt="image card">
+          <img class="card-img-top" src="images/whychooseus.png" alt="image card">
           <div class="card-body">
               <h4 class="card-title">Food Testing Services</h4>
               <p class="card-text">
