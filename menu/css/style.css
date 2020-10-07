@@ -1,0 +1,76 @@
+ *{
+     font-family: 'Trebuchet MS', sans-serif;
+     color: #0A0908;
+ }
+
+nav{
+  background-color: #F2F4F3;
+}
+
+section{
+  padding: 150px 0;
+}
+
+footer{
+  background-color: #A9927D;
+}
+
+#company{
+    font-family: 'Satisfy', cursive;
+    font-size: 25px;
+}
+
+#slideshow{
+    background: none;
+    height:70vh;
+}
+
+#menu, #other{
+    padding: 80px 0px;
+    background: #F2F4F3;
+}
+
+#menu .outer, #other .outer{
+    background: white;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.08);
+}
+
+#menu .lower, #other .lower{
+    padding: 20px 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#menu a, #other a{
+    color: black;
+    text-decoration-line: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+h1{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+h2{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#detail{
+    margin-top: 70px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#selected-detail{
+    padding-top: 20px;
+}
+
+#selected{
+    border-radius: 5%;
+}
