@@ -8,6 +8,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css"
   <title>OT | Catering Menu</title>
   <style>
     .container {
@@ -69,7 +70,7 @@
     }
 
     #menucontainer {
-      background-image: url("images/menu_back1.jpg");
+      background-image: url("");
     }
     h3.title{
       color:#fff;
@@ -79,12 +80,12 @@
 
 <body id="menucontainer" >
   <div >
-  <div class="container" >
+  <div class="container " >
     <h1 class="text-center">Catering Menu</h1>
     <hr class="hr">
     </div>
 
-    <div class="container" >
+    <div class="container " >
       <div class="row">
         <div class="col-md-4 col-sm-6">
           <div class="product-grid2">
@@ -97,7 +98,7 @@
           </div>
         </div>
         <div class="col-md-4 col-sm-6">
-          <div class="product-grid2">
+          <div class="product-grid2 ">
             <div class="product-image2"> <a href="#"> <img class="pic-1" src="images/menu2.png"> </a>
 
             </div>

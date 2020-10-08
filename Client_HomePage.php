@@ -162,7 +162,11 @@
     <div class="row justify-content-center">
       <div class="col-md-4" id="menua">
         <div class="card shadow" style="width:20rem;">
-          <img src="menua.gif" alt="Card image cap">
+
+          <img src="images/menua.gif" alt="Card image cap">
+
+          
+
           <div class="card-body text-center">
             <h5 class="card-title"> Menu A </h5>
             <p class="card-text"> This is Chinese Cursine</p>
@@ -200,6 +204,11 @@
   </section>
 
   <!--why choose us-->
+<<<<<<< HEAD:Client_HomePage.php
+
+  <!--why choose us section-->
+ 
+=======
   <div class="class-fluid padding">
     <div class="row welcome text-center">
       <div class="col-12">
@@ -226,6 +235,7 @@
     </div>
   </div>
 
+>>>>>>> 2aa337684760831781e0b0123802b2d294e243db:ClientHome.php
   <footer class="bg-primary text-white" id="footermain">
     <div id="footerimage">
       <div class="container py-12">
