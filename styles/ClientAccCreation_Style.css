@@ -1,7 +1,12 @@
 body {
     color: #999;
-    background: #f2f4f3;
     font-family: 'Quebec Serial Bold', sans-serif;
+    background-image: url("food.jpg");
+    background-color: white; /* Used if the image is not available */
+    height: auto; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 .signup-form label {
@@ -14,16 +19,31 @@ body {
     border-radius: 0;
 }
 
+/*card element inside form*/
+.card{
+    background: white;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px 0 5px 0;
+    border-radius: 1px;
+    margin-bottom:30px;
+}
+
+/*Signup form design*/
 .signup-form {
-    width: 390px;
+    width: 400px;
     margin: 0 auto;
     padding: 30px 0;
 }
 
-.signup-form h2 {
+.signup-form h2, h3 {
     color: #636363;
-    margin: 0 0 15px;
+    margin: 5px 0 15px;
     text-align: center;
+}
+
+.signup-form p{
+    margin-top: 30px;
 }
 
 .signup-form .lead {
@@ -32,14 +52,14 @@ body {
     text-align: center;
 }
 
-.signup-form form {
-    border-radius: 1px;
-    margin-bottom: 15px;
-    background: #fff;
-    border: 1px solid #f3f3f3;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    padding: 30px;
-}
+    .signup-form form {
+        border-radius: 1px;
+        margin-bottom: 15px;
+        background: #f2f4f3;
+        border: 1px solid #f3f3f3;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+    }
 
 .signup-form .form-group {
     margin-bottom: 20px;
