@@ -1,0 +1,11 @@
+.t_header {
+             background: linear-gradient(35deg,#a9927d,#5e503f);
+         }
+
+         #btn_del {
+             background: linear-gradient(45deg,#a9927d,#5e503f);
+         }
+
+         #copyright {
+             background-color: #5E503f;
+         }
