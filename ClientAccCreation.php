@@ -11,61 +11,52 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" href="ClientAccCreation_Style.css">
-
+    <?php
+        echo "<link rel='stylesheet' href='ClientAccCreation_Style.css'>";
+    ?>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="index.php"><img src='picture/logo.png' width='50' id="logo"></a>
-            <a class="navbar-brand js-scroll-trigger" href="index.php" id="company">FoodEdge</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.php">Home</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="menu.php">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">Log In</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
+<body>
     <div class="signup-form">
         <form action="#" method="post">
-            <h2>Create Client Account</h2>
-            <div class="form-group">
-                <div class="input-group">
-                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                    <input type="text" class="form-control" name="username" placeholder="Username" required="required">
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="input-group">
-                    <span class="input-group-addon"><i class="fa fa-paper-plane"></i></span>
-                    <input type="email" class="form-control" name="email" placeholder="Email Address" required="required">
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="input-group">
-                    <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                    <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+            <div class="card text-white" style="width: 330px">
+                <div class="card-body">
+                    <h2>Create Client Account</h2>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                            <input type="text" class="form-control" name="username" placeholder="Username" required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-paper-plane"></i></span>
+                            <input type="email" class="form-control" name="email" placeholder="Email Address" required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                            <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="fa fa-lock"></i>
+                                <i class="fa fa-check"></i>
+                            </span>
+                            <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="form-group">
-                <div class="input-group">
-                    <span class="input-group-addon">
-                        <i class="fa fa-lock"></i>
-                        <i class="fa fa-check"></i>
-                    </span>
-                    <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
-                </div>
-            </div>
-
+        <!--Personal details card-->
+        <div class="card text-white" style="width: 330px">
+          <div class="card-header"><h3>Personal Details</h3></div>
+          <div class="card-body">
             <div class="form-group">
                 <div class="input-group">
                     <span class="input-group-addon">
@@ -134,19 +125,22 @@
                     <input type="number" class="form-control" name="zip_code" placeholder="Zip Code" required="required">
                 </div>
             </div>
+          </div>
+        </div>
 
             <div class="custom-control custom-checkbox">
                 <input type="checkbox" class="custom-control-input" id="membershipCheckBox">
-                <label class="custom-control-label" for="membershipCheckBox">Apply a membership account for RM 5.00</label>
+                <label class="custom-control-label" for="membershipCheckBox">Apply a membership account for RM 10.00</label>
             </div>
 
             <div class="form-group">
                 <button type="submit" class="btn btn-primary btn-block btn-lg">Sign Up</button>
             </div>
 
+            <div class="text-center">Already have an account? <a href="#">Login here</a>.</div>
+
             <p class="small text-center">By clicking the Sign Up button, you agree to our <br><a href="#">Terms &amp; Conditions</a>, and <a href="#">Privacy Policy</a>.</p>
         </form>
-        <div class="text-center">Already have an account? <a href="#">Login here</a>.</div>
     </div>
 </body>
 </html>
