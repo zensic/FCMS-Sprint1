@@ -162,7 +162,11 @@
     <div class="row justify-content-center">
       <div class="col-md-4" id="menua">
         <div class="card shadow" style="width:20rem;">
+
           <img src="images/menua.gif" alt="Card image cap">
+
+          
+
           <div class="card-body text-center">
             <h5 class="card-title"> Menu A </h5>
             <p class="card-text"> This is Chinese Cursine</p>
@@ -200,9 +204,38 @@
   </section>
 
   <!--why choose us-->
+<<<<<<< HEAD:Client_HomePage.php
 
   <!--why choose us section-->
  
+=======
+  <div class="class-fluid padding">
+    <div class="row welcome text-center">
+      <div class="col-12">
+        <h1 class="display-4">Why Choose Us </h1>
+
+      </div>
+    </div>
+  </div>
+  <!--why choose us section-->
+  <div class="container-fluid padding">
+    <div class="row padding">
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="images/whychooseus.png" alt="image card">
+          <div class="card-body">
+              <h4 class="card-title">Food Testing Services</h4>
+              <p class="card-text">
+              Come and visit us, get to know us, try our food and let us not be strangers on your auspicious day of event.</p>
+          </div>
+          
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+>>>>>>> 2aa337684760831781e0b0123802b2d294e243db:ClientHome.php
   <footer class="bg-primary text-white" id="footermain">
     <div id="footerimage">
       <div class="container py-12">
