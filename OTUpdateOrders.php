@@ -27,7 +27,7 @@
 	</head>
 	<body>
 	<?php
-        include 'include/OTNavBar.php.php';
+        include 'include/OTNavBar.php';
     ?>
 	<div class="container">
     <div class="row clearfix">

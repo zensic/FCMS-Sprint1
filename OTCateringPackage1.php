@@ -79,8 +79,8 @@
 
 <body id="menucontainer" >
   <?php
-        include 'include/OTNavBar.php.php';
-    ?>
+    include 'include/OTNavBar.php';
+  ?>
   <div >
   <div class="container " >
     <h1 class="text-center">Catering Menu</h1>

@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
   <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="styles/client_catering.css" rel="stylesheet">
 
   <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
 
@@ -24,7 +24,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="index.php"><img src='picture/logo.png' width='50' id="logo"></a>
+      <a class="navbar-brand" href="index.php"><img src='images/logo.png' width='50' id="logo"></a>
       <a class="navbar-brand js-scroll-trigger" href="index.php" id="company">FoodEdge</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -44,7 +44,7 @@
       <div class="container">
           <div class="row justify-content-center">
               <div class="col-lg-4 col-md-6 col-sm-6 col-5" id="selected-image">
-                  <img src="picture/chinese.jpg" width="250" alt="western food" id="selected">
+                  <img src="images/chinese.jpg" width="250" alt="western food" id="selected">
               </div>
               <div class="col-lg-4 col-md-6 col-sm-6 col-5" id="selected-detail">
                   <p>Package A</p>

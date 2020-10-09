@@ -8,6 +8,9 @@
     <title>CRUD Catering Packages</title>
 </head>
 <body>
+    <?php
+        include 'include/OTNavBar.php.php';
+    ?>
     <div class="container">
         <form>
             <div class="row">
