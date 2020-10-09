@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width = device-width, initial-scale = 1">
   <link rel="stylesheet" href="styles/homepage.css">
+  <link rel="stylesheet" href="styles/client_catering.css">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <title>Home | FoodEdge</title>
   <?php include 'includes/NavBarStyle.php';?>
@@ -124,7 +125,7 @@
           <div class="row">
               <div class="col-4">
                   <div class="outer">
-                      <a href="menu.php">
+                      <a href="ClientMenu.php">
                           <div class="upper">
                               <img src="images/chinese.jpg" class="img-rounded" alt="chinese food">
                           </div>
@@ -136,7 +137,7 @@
               </div>
               <div class="col-4">
                   <div class="outer">
-                      <a href="menu.php">
+                      <a href="ClientMenu.php">
                           <div class="upper">
                               <img src="images/western.jpg" alt="western food">
                           </div>
@@ -148,7 +149,7 @@
               </div>
               <div class="col-4">
                   <div class="outer">
-                      <a href="menu.php">
+                      <a href="ClientMenu.php">
                           <div class="upper">
                               <img src="images/mix.jpg" alt="mix package">
                           </div>
