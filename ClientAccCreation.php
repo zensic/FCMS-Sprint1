@@ -5,6 +5,9 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="FCMS">
+    <meta name="author" content="Ooi Kuan Hao"/>
+    <meta name="description" content="Client Account Creation Page"/>
     
     <!-- navbar css -->
     <?php
@@ -12,17 +15,34 @@
     ?>
     
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-    <title>Client Create Account age</title>
+    <title>Client Create Account</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <?php
-        echo "<link rel='stylesheet' href='ClientAccCreation_Style.css'>";
+        echo "<link rel='stylesheet' href='styles/ClientAccCreation_Style.css'>";
     ?>
+
+    <style>
+    body {
+        color: #999;
+        font-family: 'Quebec Serial Bold', sans-serif;
+        background-image: url("images/food.jpg");
+        background-color: white; /* Used if the image is not available */
+        height: auto; /* You must set a specified height */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+    }
+    </style>
 </head>
 
 <body>
+    <?php
+        include 'include/ClientsNavBar.php';
+    ?>
+    
     <div class="signup-form">
         <form action="#" method="post">
             <div class="card text-white" style="width: 330px">
