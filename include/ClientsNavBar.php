@@ -23,8 +23,6 @@
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Client_HomePage.php">Home</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="ClientCateringPackage.php">Menu</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="ClientOrders.php">Order</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.php">Home</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="menu.php">Menu</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">About Us</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">Log In</a></li>
         </ul>
