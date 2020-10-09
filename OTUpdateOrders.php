@@ -47,7 +47,7 @@
 						</th>
 					</tr>
 				</thead>
-				<tbody>
+				<tbody class="table_body">
     				<tr id='addr0' data-id="0" class="hidden">
 						<td data-name="name">
 						    <input type="text" name='name0'  placeholder='Order ID' class="form-control"/>
