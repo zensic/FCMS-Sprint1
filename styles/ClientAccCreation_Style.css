@@ -1,14 +1,3 @@
-body {
-    color: #999;
-    font-family: 'Quebec Serial Bold', sans-serif;
-    background-image: url("food.jpg");
-    background-color: white; /* Used if the image is not available */
-    height: auto; /* You must set a specified height */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-}
-
 .signup-form label {
     color: #636363;
 }
@@ -32,6 +21,7 @@ body {
 /*Signup form design*/
 .signup-form {
     width: 400px;
+    margin-top: 100px;
     margin: 0 auto;
     padding: 30px 0;
 }
@@ -52,14 +42,14 @@ body {
     text-align: center;
 }
 
-    .signup-form form {
-        border-radius: 1px;
-        margin-bottom: 15px;
-        background: #f2f4f3;
-        border: 1px solid #f3f3f3;
-        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-        padding: 30px;
-    }
+.signup-form form {
+    border-radius: 1px;
+    margin-bottom: 15px;
+    background: #f2f4f3;
+    border: 1px solid #f3f3f3;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
 
 .signup-form .form-group {
     margin-bottom: 20px;
@@ -117,17 +107,17 @@ body {
     font-size: 17px;
 }
 
-    .signup-form .fa-hoeme {
-        left: 9px;
-        top: 18px;
-        font-size: 7px;
-        position: absolute;
-    }
+.signup-form .fa-hoeme {
+    left: 9px;
+    top: 18px;
+    font-size: 7px;
+    position: absolute;
+}
 
 .signup-form .fa-check {
     color: #fff;
-    left: 9px;
-    top: 18px;
+    left: 13px;
+    top: 16px;
     font-size: 7px;
     position: absolute;
 }
