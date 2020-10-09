@@ -13,7 +13,6 @@
 
   <!-- Custom styles for this template -->
   <link href="styles/client_catering.css" rel="stylesheet">
-
   <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
 
 </head>

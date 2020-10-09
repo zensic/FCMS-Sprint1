@@ -8,7 +8,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css"
   <title>OT | Catering Menu</title>
   <style>
     .container {
@@ -79,6 +78,9 @@
 </head>
 
 <body id="menucontainer" >
+  <?php
+        include 'include/OTNavBar.php.php';
+    ?>
   <div >
   <div class="container " >
     <h1 class="text-center">Catering Menu</h1>
