@@ -12,38 +12,7 @@
   include 'include/NavBarStyle.php';
   ?>
   <style>
-    .slide1 {
-      background-image: url('images/homeslide1.png');
-      height: 750px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-    }
-
-    .slide2 {
-      background-image: url('images/homeslide2.png');
-      height: 750px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-    }
-
-    .slide3 {
-      background-image: url('images/homeslide3.png');
-      height: 750px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-    }
-
-    #fixedImage {
-      background-image: url("images/fixed.jpeg");
-      background-size: cover;
-      background-attachment: fixed;
-      height: 30%;
-      width: 100%;
-      background-size: cover;
-    }
+   
   </style>
 </head>
 
