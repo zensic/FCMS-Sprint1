@@ -31,14 +31,16 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.php">Home</a></li>
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="menu.php">Menu</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="ClientHomePage.php">Home</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="ClientMenu.php">Menu</a></li>
           <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">About Us</a></li>
           <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">Log In</a></li>
         </ul>
       </div>
     </div>
   </nav>
+  <!--end navigation-->
+  
 
   <section id="detail">
       <div class="container">

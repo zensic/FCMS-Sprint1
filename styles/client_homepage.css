@@ -34,7 +34,7 @@
   }
 
   .gap {
-    padding: 120px 0px;
+    padding: 70px 0px;
   }
 
 
@@ -74,4 +74,34 @@
     height: 30%;
     width: 100%;
     background-size: cover;
+  }
+  footer a {
+    color: 5E503F;
+  }
+
+  #footermain {
+    background-color: #5e503f;
+  }
+
+  #copyright {
+    background-color: grey;
+  }
+  footer a {
+    color: 5E503F;
+  }
+
+  #footercolor {
+    background-color: #5e503f;
+  }
+
+  .copyright {
+    color: white;
+  }
+  
+  .footertext{
+    color:white;
+  }
+  .hometext{
+    color: #f2f4f3;
+    size: 2.5rem;
   }

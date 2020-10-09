@@ -10,8 +10,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Client_HomePage.php">Home</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="ClientCateringPackage.php">Menu</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="ClientHomePage.php">Home</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="ClientMenu.php">Menu</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="ClientOrders.php">Order</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">About Us</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">Log In</a></li>
