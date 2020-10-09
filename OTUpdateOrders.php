@@ -25,66 +25,119 @@
         include 'include/OTNavBar.php';
     ?>
 	<div class="container">
-    <div class="row clearfix">
-    	<div class="col-md-12 table-responsive">
-			<table class="table table-bordered table-hover table-sortable" id="tab_logic">
-				<thead class="table_heading">
-					<tr >
-						<th class="text-center">
-							Order ID
-						</th>
-						<th class="text-center">
-							Order Date 
-						</th>
-						<th class="text-center">
-							Client Name
-						</th>
-    					<th class="text-center">
-							Package Option
-						</th>
-        				<th class="text-center" >
-							Order Status
-						</th>
-					</tr>
-				</thead>
-				<tbody class="table_body">
-    				<tr id='addr0' data-id="0" class="hidden">
-						<td data-name="name">
-						    <input type="text" name='name0'  placeholder='Order ID' class="form-control"/>
-						</td>
-						<td data-name="name">
-							<input class="form-control" type="date" value="2020-10-8" id="example-date-input">
-						    
-						</td>
-						<td data-name="name">
-						    <input type="text" name='mail0' placeholder='Order Date' class="form-control"/>
-						</td>
-    					<td data-name="sel">
-						    <select name="sel0">
-        				        <option value="">Package Option</option>
-    					        <option value="1">Package 1</option>
-        				        <option value="2">Package 2</option>
-        				        <option value="3">Package 3</option>
-						    </select>
-						</td>
-						<td data-name="sel">
-						    <select name="sel0">
-        				        <option value="">Order Status</option>
-    					        <option value="1">Pending</option>
-        				        <option value="2">In-progress</option>
-        				        <option value="3">Complete</option>
-						    </select>
-						</td>
-                        <td data-name="del">
-                            <button name="del0" class='btn btn-danger glyphicon glyphicon-remove row-remove'><span aria-hidden="true">×</span></button>
-                        </td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
+		<form method="post">
+		    <div class="row clearfix">
+			<div class="col-md-12 table-responsive">
+					<table class="table table-bordered table-hover table-sortable" id="tab_logic">
+						<thead class="table_heading">
+							<tr >
+								<th class="text-center">
+									Order ID
+								</th>
+								<th class="text-center">
+									Order Date 
+								</th>
+								<th class="text-center">
+									Client Name
+								</th>
+							<th class="text-center">
+									Package Option
+								</th>
+							<th class="text-center" >
+									Order Status
+								</th>
+							</tr>
+						</thead>
+						<tbody class="table_body">
+						<tr id='addr0' data-id="0" class="hidden">
+								<td data-name="name">
+								    <input type="text" name='orderID'  placeholder='Order ID' class="form-control"/>
+								</td>
+								<td data-name="name">
+									<input class="form-control" type="date" name="order_Date" id="example-date-input">
+
+								</td>
+								<td data-name="name">
+								    <input type="text" name='mail0' placeholder='Order Date' class="form-control"/>
+								</td>
+							<td data-name="sel">
+								    <select name="sel0">
+								<option value="">Package Option</option>
+								<option value="1">Package 1</option>
+								<option value="2">Package 2</option>
+								<option value="3">Package 3</option>
+								    </select>
+								</td>
+								<td data-name="sel">
+								    <select name="orderStatus">
+								<option value="">Order Status</option>
+								<option value="Pending">Pending</option>
+								<option value="In-progress">In-progress</option>
+								<option value="Complete">Complete</option>
+								    </select>
+								</td>
+					<td data-name="del">
+					    <button name="del0" class='btn btn-danger glyphicon glyphicon-remove row-remove'><span aria-hidden="true">×</span></button>
+					</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		<button id="add_row" class="btn btn-warning float-right" type="submit" name="submit" >Add Row</button>
+	</form>
 	</div>
-	<a id="add_row" class="btn btn-warning float-right">Add Row</a>
-	</div>
+		
+		
+		<!--Find date availability, update order status-->
+		<!--?php	
+			// Create database connection
+			$db = mysqli_connect("localhost", "root", "", "fcms");
+				
+			//Uncomment this section to check database connection
+			if($db){
+				echo"Successful Connect to DB<br/>";
+			}else{
+				die("fail");
+			}
+
+			//Make sure user clicked the submit button
+			if(isset($_POST['submit'])){
+				$date = mysqli_real_escape_string($db, $_POST['order_date']);
+
+				$sql = "SELECT * FROM orders";
+				$result = mysqli_query($db, $sql);
+				$numRows = mysqli_num_rows($result);
+
+				if($numRows > 0){
+					echo "</br><b>".$numRows." Result Found!"."</b></br>";
+					while($row = mysqli_fetch_assoc($result)){
+						if($date == $row['order_Date']){
+							echo "Date clashed!";
+						}
+						else{
+							echo "Date is available!";
+						}
+					}
+				}else{
+					echo "Table is empty";
+				}
+
+				//Escape special characters for $db connection
+                $ordr_ID = mysqli_real_escape_string($db, $_POST['orderID']);
+                $ordrStatus = mysqli_real_escape_string($db, $_POST['orderStatus']);
+
+				$sql2 = "UPDATE orders SET status='$ordrStatus' WHERE orderID='$ordr_ID'";
+				
+				//Check update to table
+				if (mysqli_query($db, $sql2)) {
+					echo"<br/>Update completed<br/>";	
+				}else{
+					echo"<br/>Failed to update</br>";
+				}
+			}
+			$db->close();
+		?-->
 	</body>
 </html>
 	
