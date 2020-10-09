@@ -1,7 +1,21 @@
 <?php
     echo'
+<<<<<<< HEAD
+    <head>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  
+    <!-- Custom styles for this template -->
+    <link href="styles/client_catering.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  
+  </head>
+  <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+=======
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+>>>>>>> 79aa0a10abbaaf042d06c983a017b6437036ec47
     <div class="container">
         <a class="navbar-brand" href="index.php"><img src="picture/logo.png" width="50" id="logo"></a>
         <a class="navbar-brand js-scroll-trigger" href="index.php" id="company">FoodEdge</a>
@@ -10,8 +24,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
+<<<<<<< HEAD
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Client_HomePage.php">Home</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="ClientCateringPackage.php">Menu</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="ClientOrders.php">Order</a></li>
+=======
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.php">Home</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="menu.php">Menu</a></li>
+>>>>>>> 79aa0a10abbaaf042d06c983a017b6437036ec47
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">About Us</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">Log In</a></li>
         </ul>
