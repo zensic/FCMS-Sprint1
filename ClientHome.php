@@ -5,15 +5,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width = device-width, initial-scale = 1">
-
-  <!-- navbar css -->
-  <?php
-    include 'include/NavBarStyle.php';
-  ?>
-
-  <!-- CSS only -->
+  <link rel="stylesheet" href="styles/homepage.css">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <title>Home | FoodEdge</title>
+  <?php include 'includes/NavBarStyle.php';?>
   <style>
     .slide1 {
       background-image: url('images/homeslide1.png');
@@ -39,51 +34,6 @@
       background-size: cover;
     }
 
-    .footera {
-      background-color: #5E503F;
-      color: grey;
-      padding-top: 2rem;
-    }
-
-    hr.light {
-      border-top: 1px;
-    }
-
-    footer a {
-      color: 5E503F;
-    }
-
-    #footermain {
-      background-color: #5e503f;
-    }
-
-    #copyright {
-      background-color: grey;
-    }
-
-    #aboutushome {
-      background-color: #a9927d;
-
-    }
-
-    .display-5 {
-      color: #f2f4f3;
-    }
-
-    .lead {
-      color: #fef4f3;
-    }
-
-    .gap {
-      padding: 120px 0px;
-    }
-
-
-    #menu {
-      padding-top: 40px;
-      padding-bottom: 40px;
-    }
-
     #fixedImage {
       background-image: url("images/fixed.jpeg");
       background-size: cover;
@@ -96,6 +46,7 @@
 </head>
 
 <body>
+
   <div id="theCarousel" class="carousel slide" data-ride="carousel">
 
     <ol class="carousel-indicators">
@@ -163,84 +114,60 @@
     </div>
   </section>
 
-  <div class="container" id="menu">
-    <div class="row justify-content-center">
-      <div class="col-md-4" id="menua">
-        <div class="card shadow" style="width:20rem;">
-<<<<<<< HEAD:Client_HomePage.php
-          <img src="images/menua.gif" alt="Card image cap">
-=======
-          <img src="menua.gif" alt="Card image cap">
->>>>>>> 2aa337684760831781e0b0123802b2d294e243db:ClientHome.php
-          <div class="card-body text-center">
-            <h5 class="card-title"> Menu A </h5>
-            <p class="card-text"> This is Chinese Cursine</p>
-            <a href="#" class="btn btn-success"> Menu A</a>
+  <section id="menu">
+  <div class="container">
+          <div class="row">
+              <div class="col-md-12 text-center">
+                  <h2>Menu Catering</h2>
+              </div>
           </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card" style="width: 20rem;">
-          <img class="card-img-top" src="images/menua.gif" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title"> Menu B</h5>
-            <p class="card-text"> This is Malay Cursine</p>
-            <a href="#" class="btn btn-success"> Menu B </a>
+          <div class="row">
+              <div class="col-4">
+                  <div class="outer">
+                      <a href="menu.php">
+                          <div class="upper">
+                              <img src="images/chinese.jpg" class="img-rounded" alt="chinese food">
+                          </div>
+                          <div class="lower">
+                              <span>Catering Package A</span>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+              <div class="col-4">
+                  <div class="outer">
+                      <a href="menu.php">
+                          <div class="upper">
+                              <img src="images/western.jpg" alt="western food">
+                          </div>
+                          <div class="lower">
+                              <span>Catering Package B</span>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+              <div class="col-4">
+                  <div class="outer">
+                      <a href="menu.php">
+                          <div class="upper">
+                              <img src="images/mix.jpg" alt="mix package">
+                          </div>
+                          <div class="lower">
+                              <span>Catering Package C</span>
+                          </div>
+                      </a>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
-      <div class="col-md-4">
-        <div class="card" style="width: 20rem;">
-          <img class="card-img-top" src="images/menua.gif" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title"> Menu C</h5>
-            <p class="card-text"> This is Indian Cursine</p>
-            <a href="#" class="btn btn-success"> Menu B </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+  </section>
   <section id="fixedImage">
     <div class="container gap">
-
+      
     </div>
   </section>
 
-  <!--why choose us-->
-<<<<<<< HEAD:Client_HomePage.php
 
-  <!--why choose us section-->
- 
-=======
-  <div class="class-fluid padding">
-    <div class="row welcome text-center">
-      <div class="col-12">
-        <h1 class="display-4">Why Choose Us </h1>
-
-      </div>
-    </div>
-  </div>
-  <!--why choose us section-->
-  <div class="container-fluid padding">
-    <div class="row padding">
-      <div class="col-md-4">
-        <div class="card">
-          <img class="card-img-top" src="images/whychooseus.png" alt="image card">
-          <div class="card-body">
-              <h4 class="card-title">Food Testing Services</h4>
-              <p class="card-text">
-              Come and visit us, get to know us, try our food and let us not be strangers on your auspicious day of event.</p>
-          </div>
-          
-
-        </div>
-      </div>
-    </div>
-  </div>
-
->>>>>>> 2aa337684760831781e0b0123802b2d294e243db:ClientHome.php
   <footer class="bg-primary text-white" id="footermain">
     <div id="footerimage">
       <div class="container py-12">
