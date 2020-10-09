@@ -20,7 +20,7 @@
 	</head>
 	<body>
 		<?php
-		include 'include/MTNavBar.php';
+			include 'include/MTNavBar.php';
 		?>
 		<div class = "container-fluid ">
 
