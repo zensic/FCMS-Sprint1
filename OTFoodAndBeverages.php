@@ -37,25 +37,37 @@
 		?>
 	<div class="container-fluid">
 		<div class="row containers">
-			<div class="col-7 text-left each_cont">
-				Food / Beverage Name
-			</div>
-			<div class="col-5 text-right each_cont">
-				<button type="submit" class="btn btn-warning btn-center">Edit</button>
-			</div>
-			<div class="col-7 text-left each_cont">
-				Food / Beverage Name
-			</div>
-			<div class="col-5 text-right each_cont">
-				<button type="submit" class="btn btn-warning btn-center">Edit</button>
-			</div>
-			<div class="col-7 text-left each_cont">
-				Food / Beverage Name
-			</div>
-			<div class="col-5 text-right each_cont">
-				<button type="submit" class="btn btn-warning btn-center">Edit</button>
-			</div>
-			
+			<?php
+				include "backend/DatabaseConnect.php";
+
+				$db = new mysqli($SERVERNAME, $USERNAME, $PASSWORD, $DATABASE);
+				
+				// check connection
+				if($db){
+					$pass = true;
+				} else {
+					die("fail");
+				}
+				
+				$sql = "SELECT * FROM Food";
+				$result = $db->query($sql);
+
+				if ($result->num_rows > 0) {
+					while ($row = $result->fetch_assoc()) {
+						echo '
+						<div class="col-7 text-left each_cont">
+							<span>'.$row["FoodName"].'</span>
+						</div>
+						<div class="col-5 text-right each_cont">
+							<button type="submit" class="btn btn-warning btn-center">Edit</button>
+						</div>
+						';
+					}
+				}
+				
+				// close connection
+				$db->close();
+			?>
 		</div>
 	</div>
 	</body>

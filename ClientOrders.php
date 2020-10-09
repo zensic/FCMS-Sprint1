@@ -15,7 +15,7 @@
 </head>
 <body>
     <?php
-    include 'include/ClientsNavBar.php';
+        include 'include/ClientsNavBar.php';
     ?>
     <div class="container" id="order">
         <section class="jumbotron">

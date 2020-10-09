@@ -53,7 +53,7 @@
 <body>
     <?php
         include 'include/ClientsNavBar.php';
-        ?>
+    ?>
     <div class="container progressBar">
         <p>Order Status</p>
         <ul>
