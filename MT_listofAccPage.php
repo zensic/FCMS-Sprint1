@@ -22,129 +22,88 @@
 
      <div class="container">
          <div class="jumbotron">
-             <div class="card">
+            <div class="card">
                  <h5 class="card-header">List Of Client's Account</h5>
                  <div class="card-body">
-                     <h5 class="card-title">Client Account</h5>
                      <table class="table table-striped ">
                          <thead>
                              <tr class="t_header">
                                  <th scope="col">Client ID</th>
-                                 <th scope="col">Member Id</th>
                                  <th scope="col">Name</th>
                                  <th scope="col">Login Email</th>
                                  <th scope="col">Action</th>
                              </tr>
                          </thead>
                          <tbody>
-                             <tr>
-                                 <th scope="row">0001</th>
-                                 <td>0001</td>
-                                 <td>John</td>
-                                 <td>john@gmail.com</td>
-                                 <td>
-                                     <button type="button" class="btn btn-secondary badge-pill" id="btn_del">Delete</button>
-                                 </td>
+                            <?php
+                                include "backend/DatabaseConnect.php";
+                                $db = new mysqli($SERVERNAME, $USERNAME, $PASSWORD, $DATABASE);
+                                $sql = "SELECT * FROM ClientTeam";
+                                $result = $db->query($sql);
+
+                                // print data a few times
+                                if ($result->num_rows > 0) {
+                                    while ($row = $result->fetch_assoc()) {
+                                        echo '
+                                        <tr>
+                                            <th scope="row">'.$row["ClientID"].'</th>
+                                            <td>'.$row["Username"].'</td>
+                                            <td>'.$row["Email"].'</td>
+                                            <td>
+                                                <button type="button" class="btn btn-secondary badge-pill" id="btn_del">Delete</button>
+                                            </td>
+                                        </tr>
+                                        ';
+                                    }
+                                }
+
+                                // close connection
+				                $db->close();
+                            ?>
+
+                         </tbody>
+                     </table>
+                 </div>
+             </div>
+             <div class="card">
+                 <h5 class="card-header">List Of Operation Team's Account</h5>
+                 <div class="card-body">
+                     <table class="table table-striped ">
+                         <thead>
+                             <tr class="t_header">
+                                 <th scope="col">Operation Team ID</th>
+                                 <th scope="col">Name</th>
+                                 <th scope="col">Login Email</th>
+                                 <th scope="col">Action</th>
                              </tr>
-                             <tr>
-                                 <th scope="row">0002</th>
-                                 <td>0002</td>
-                                 <td>Thornton</td>
-                                 <td>thornton@gmail.com</td>
-                                 <td>
-                                     <button type="button" class="btn btn-secondary badge-pill" id="btn_del">Delete</button>
-                                 </td>
-                             </tr>
-                             <tr>
-                                 <th scope="row">0003</th>
-                                 <td>0003</td>
-                                 <td>Iron Man</td>
-                                 <td>ironman@marvel.com</td>
-                                 <td>
-                                     <button type="button" class="btn btn-secondary badge-pill" id="btn_del">Delete</button>
-                                 </td>
-                             </tr>
-                             <tr>
-                                 <th scope="row">0001</th>
-                                 <td>0001</td>
-                                 <td>John</td>
-                                 <td>john@gmail.com</td>
-                                 <td>
-                                     <button type="button" class="btn btn-secondary badge-pill" id="btn_del">Delete</button>
-                                 </td>
-                             </tr>
-                             <tr>
-                                 <th scope="row">0002</th>
-                                 <td>0002</td>
-                                 <td>Thornton</td>
-                                 <td>thornton@gmail.com</td>
-                                 <td>
-                                     <button type="button" class="btn btn-secondary badge-pill" id="btn_del">Delete</button>
-                                 </td>
-                             </tr>
-                             <tr>
-                                 <th scope="row">0003</th>
-                                 <td>0003</td>
-                                 <td>Iron Man</td>
-                                 <td>ironman@marvel.com</td>
-                                 <td>
-                                     <button type="button" class="btn btn-secondary badge-pill" id="btn_del">Delete</button>
-                                 </td>
-                             </tr>
-                             <tr>
-                                 <th scope="row">0001</th>
-                                 <td>0001</td>
-                                 <td>John</td>
-                                 <td>john@gmail.com</td>
-                                 <td>
-                                     <button type="button" class="btn btn-secondary badge-pill" id="btn_del">Delete</button>
-                                 </td>
-                             </tr>
-                             <tr>
-                                 <th scope="row">0002</th>
-                                 <td>0002</td>
-                                 <td>Thornton</td>
-                                 <td>thornton@gmail.com</td>
-                                 <td>
-                                     <button type="button" class="btn btn-secondary badge-pill" id="btn_del">Delete</button>
-                                 </td>
-                             </tr>
-                             <tr>
-                                 <th scope="row">0003</th>
-                                 <td>0003</td>
-                                 <td>Iron Man</td>
-                                 <td>ironman@marvel.com</td>
-                                 <td>
-                                     <button type="button" class="btn btn-secondary badge-pill" id="btn_del">Delete</button>
-                                 </td>
-                             </tr>
-                             <tr>
-                                 <th scope="row">0001</th>
-                                 <td>0001</td>
-                                 <td>John</td>
-                                 <td>john@gmail.com</td>
-                                 <td>
-                                     <button type="button" class="btn btn-secondary badge-pill" id="btn_del">Delete</button>
-                                 </td>
-                             </tr>
-                             <tr>
-                                 <th scope="row">0002</th>
-                                 <td>0002</td>
-                                 <td>Thornton</td>
-                                 <td>thornton@gmail.com</td>
-                                 <td>
-                                     <button type="button" class="btn btn-secondary badge-pill" id="btn_del">Delete</button>
-                                 </td>
-                             </tr>
-                             <tr>
-                                 <th scope="row">0003</th>
-                                 <td>0003</td>
-                                 <td>Iron Man</td>
-                                 <td>ironman@marvel.com</td>
-                                 <td>
-                                     <button type="button" class="btn btn-secondary badge-pill" id="btn_del">Delete</button>
-                                 </td>
-                             </tr>
+                         </thead>
+                         <tbody>
+                            <?php
+                                include "backend/DatabaseConnect.php";
+                                $db = new mysqli($SERVERNAME, $USERNAME, $PASSWORD, $DATABASE);
+                                $sql = "SELECT * FROM OperationTeam";
+                                $result = $db->query($sql);
+
+                                // print data a few times
+                                if ($result->num_rows > 0) {
+                                    while ($row = $result->fetch_assoc()) {
+                                        echo '
+                                        <tr>
+                                            <th scope="row">'.$row["OperationID"].'</th>
+                                            <td>'.$row["Username"].'</td>
+                                            <td>'.$row["Email"].'</td>
+                                            <td>
+                                                <button type="button" class="btn btn-secondary badge-pill" id="btn_del">Delete</button>
+                                            </td>
+                                        </tr>
+                                        ';
+                                    }
+                                }
+
+                                // close connection
+				                $db->close();
+                            ?>
+
                          </tbody>
                      </table>
                  </div>
