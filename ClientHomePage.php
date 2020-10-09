@@ -1,128 +1,201 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width = device-width, initial-scale = 1">
+  <link rel="stylesheet" href="styles/Client_homepage.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>Home | FoodEdge</title>
+  <?php
+  include 'include/NavBarStyle.php';
+  ?>
+  <style>
+    .slide1 {
+      background-image: url('images/homeslide1.png');
+      height: 750px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
 
-  <title>Homepage</title>
+    .slide2 {
+      background-image: url('images/homeslide2.png');
+      height: 750px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    .slide3 {
+      background-image: url('images/homeslide3.png');
+      height: 750px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
 
-  <!-- Custom styles for this template -->
-  <link href="styles/client_catering.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-
+    #fixedImage {
+      background-image: url("images/fixed.jpeg");
+      background-size: cover;
+      background-attachment: fixed;
+      height: 30%;
+      width: 100%;
+      background-size: cover;
+    }
+  </style>
 </head>
 
-<body id="page-top">
+<body>
+  <?php
+  include 'include/ClientsNavBar.php';
+  ?>
+  <div id="theCarousel" class="carousel slide" data-ride="carousel">
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand" href="#page-top"><img src='images/logo.png' width='50' id="logo"></a>
-      <a class="navbar-brand js-scroll-trigger" href="#page-top" id="company">FoodEdge</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#page-top">Home</a></li>
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#menu">Menu</a></li>
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">About Us</a></li>
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">Log In</a></li>
-        </ul>
+    <ol class="carousel-indicators">
+      <li data-target="#theCarousel" data-slide-to="0" class="active"> </li>
+      <li data-target="#theCarousel" data-slide-to="1"> </li>
+      <li data-target="#theCarousel" data-slide-to="2"> </li>
+    </ol>
+
+    <!-- Define the text to place over the image -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <div class="slide1"></div>
+        <div class="carousel-caption">
+          <h1>Welcome To Foodedge Gourmate</h1>
+          <p>Best Catering services in Kuching Sarawak</p>
+
+        </div>
+      </div>
+      <div class="item">
+        <div class="slide2"></div>
+        <div class="carousel-caption">
+          <h1>Welcome To Foodedge Gourmate</h1>
+          <p>Best Catering services in Kuching Sarawak</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="slide3"></div>
+        <div class="carousel-caption">
+          <h1>Welcome To Foodedge Gourmate</h1>
+          <p>Best Catering services in Kuching Sarawak</p>
+        </div>
       </div>
     </div>
-  </nav>
 
-  <section id="slideshow">
-      <div class="container">
-          <div class="col-md-12">
-              <h1>Slideshow</h1>
-          </div>
-      </div>
-</section>
 
-<section id="menu">
-  <div class="container">
-          <div class="row">
-              <div class="col-md-12 text-center">
-                  <h2>Menu Catering</h2>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-4">
-                  <div class="outer">
-                      <a href="menu.php">
-                          <div class="upper">
-                              <img src="images/chinese.jpg" class="img-rounded" alt="chinese food">
-                          </div>
-                          <div class="lower">
-                              <span>Catering Package A</span>
-                          </div>
-                      </a>
-                  </div>
-              </div>
-              <div class="col-4">
-                  <div class="outer">
-                      <a href="menu.php">
-                          <div class="upper">
-                              <img src="images/western.jpg" alt="western food">
-                          </div>
-                          <div class="lower">
-                              <span>Catering Package B</span>
-                          </div>
-                      </a>
-                  </div>
-              </div>
-              <div class="col-4">
-                  <div class="outer">
-                      <a href="menu.php">
-                          <div class="upper">
-                              <img src="images/mix.jpg" alt="mix package">
-                          </div>
-                          <div class="lower">
-                              <span>Catering Package C</span>
-                          </div>
-                      </a>
-                  </div>
-              </div>
-          </div>
+    <a class="left carousel-control" href="#theCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"> </span>
+    </a>
+    <a class="right carousel-control" href="#theCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
+  <!--endofslide-->
+
+  <div class="container-fluid padding" id="aboutushome">
+    <div class="row welcome text-center text-white">
+      <div class="col-12">
+        <h1 class="display-5">About FoodEdge Gourmate</h1>
       </div>
+      <hr>
+      <div class="col-12">
+        <p class="lead">
+          FoodEdge Gourmate Sdn Bhd established in the year of 1999 which 20+ years of experience
+          in exquisite catering and excellent hospitality. We provide quality food in a affordable price.
+          From appetizing Asian cuisine to Indian Curine, we are one-stop award winning catering company for all your event needs.
+
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- end of aboutus-->
+  <section id="fixedImage">
+    <div class="container gap">
+
+    </div>
   </section>
 
-  <section id="contact">
+  <section id="menu">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>Contact us</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+        <div class="col-md-12 text-center">
+          <h2>Menu Catering</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <div class="outer">
+            <a href="menu.php">
+              <div class="upper">
+                <img src="images/chinese.jpg" class="img-rounded" alt="chinese food">
+              </div>
+              <div class="lower">
+                <span>Catering Package A</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="outer">
+            <a href="menu.php">
+              <div class="upper">
+                <img src="images/western.jpg" alt="western food">
+              </div>
+              <div class="lower">
+                <span>Catering Package B</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="outer">
+            <a href="menu.php">
+              <div class="upper">
+                <img src="images/mix.jpg" alt="mix package">
+              </div>
+              <div class="lower">
+                <span>Catering Package C</span>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </section>
+  <section id="fixedImage">
+    <div class="container gap">
 
-  <!-- Footer -->
-  <footer class="py-5">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
     </div>
-    <!-- /.container -->
+  </section>
+
+
+  <footer class="bg-primary text-white" id="footermain">
+    <div id="footerimage">
+      <div class="container py-12">
+        <div class="row text-center">
+          <div class="col-lg-12 ">
+            <h4>About Us</h4>
+            <p> 082-8865234</p>
+            <p>enquiry@foodedge.com</p>
+            <p>Jalan Song</p>
+            <p>Kuching, Sarawak, Malaysia</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid text-center bg-secondary" id="copyright">
+      &copy; 2020. All right are Reserved by FoodEdge Gourmate
+    </div>
+
   </footer>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom JavaScript for this theme -->
-  <script src="js/scrolling-nav.js"></script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!--script src="js/jquery"-->
 </body>
 
 </html>
