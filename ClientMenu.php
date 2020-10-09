@@ -74,7 +74,7 @@
                   <div class="outer">
                       <a href="#">
                           <div class="upper">
-                              <img src="picture/western.jpg" alt="western food">
+                              <img src="images/western.jpg" alt="western food">
                           </div>
                           <div class="lower">
                               <span>Catering Package B</span>
@@ -86,7 +86,7 @@
                   <div class="outer">
                       <a href="#">
                           <div class="upper">
-                              <img src="picture/mix.jpg" alt="mix package">
+                              <img src="images/mix.jpg" alt="mix package">
                           </div>
                           <div class="lower">
                               <span>Catering Package C</span>
