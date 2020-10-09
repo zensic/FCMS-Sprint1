@@ -46,11 +46,14 @@
         }
 
     </style>
+    <?php
+        include 'include/NavBarStyle.php';
+    ?>
 </head>
 <body>
     <?php
-        include 'ClientsNavBar.php';
-    ?>
+        include 'include/ClientsNavBar.php';
+        ?>
     <div class="container progressBar">
         <p>Order Status</p>
         <ul>

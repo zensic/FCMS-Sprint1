@@ -14,7 +14,10 @@
     <title>Orders</title>
 </head>
 <body>
-    <div class="container">
+    <?php
+    include 'include/ClientsNavBar.php';
+    ?>
+    <div class="container" id="order">
         <section class="jumbotron">
             <div class="row" style="cursor: pointer;">
                 <div class="col-md-2 col-sm-4">

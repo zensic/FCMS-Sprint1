@@ -1,9 +1,9 @@
-#mainNav{
+#mainNav, #OTmainNav{
     background-color: #F2F4F3;
+    margin-bottom: 20px;
 }
 
 #company{
     font-family: 'Satisfy', cursive;
     font-size: 25px;
 }
-

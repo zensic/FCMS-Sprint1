@@ -28,7 +28,13 @@
 			padding: 20px;
 		}
 	</style>
+	<?php
+        include 'include/NavBarStyle.php';
+    ?>
 	<body>
+	<?php
+		include 'include/OTNavBar.php';
+		?>
 	<div class="container-fluid">
 		<div class="row containers">
 			<div class="col-7 text-left each_cont">

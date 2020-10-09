@@ -23,8 +23,11 @@
 				margin-top: 50px;
 			}
 		</style>
-		
+		<?php
+		include 'include/NavBarStyle.php';
+		?>
 	</head>
+
 	<body>
 	<?php
         include 'include/OTNavBar.php';

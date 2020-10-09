@@ -6,10 +6,13 @@
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="styles/ordersClient.css">
     <title>CRUD Catering Packages</title>
+    <?php
+        include 'include/NavBarStyle.php';
+    ?>
 </head>
 <body>
     <?php
-        include 'include/OTNavBar.php.php';
+        include 'include/OTNavBar.php';
     ?>
     <div class="container">
         <form>

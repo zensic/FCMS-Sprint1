@@ -9,7 +9,9 @@
   <link rel="stylesheet"type="text/css" href="styles/OTCateringPackage1.css">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <title>OT | Catering Menu</title>
-  
+  <?php
+        include 'include/NavBarStyle.php';
+    ?>
 </head>
 
 <body id="menucontainer" >
