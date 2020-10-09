@@ -54,7 +54,7 @@
 								    <input type="text" name='orderID'  placeholder='Order ID' class="form-control"/>
 								</td>
 								<td data-name="name">
-									<input class="form-control" type="date" name="order_Date" id="example-date-input">
+									<input class="form-control" type="date" name="order_date" id="example-date-input">
 
 								</td>
 								<td data-name="name">
@@ -90,7 +90,7 @@
 		
 		
 		<!--Find date availability, update order status-->
-		<!--?php	
+		<?php	
 			// Create database connection
 			$db = mysqli_connect("localhost", "root", "", "fcms");
 				
@@ -137,7 +137,7 @@
 				}
 			}
 			$db->close();
-		?-->
+		?>
 	</body>
 </html>
 	
