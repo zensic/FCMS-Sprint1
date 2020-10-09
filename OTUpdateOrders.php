@@ -26,7 +26,10 @@
 		
 	</head>
 	<body>
-		<div class="container">
+	<?php
+        include 'include/OTNavBar.php.php';
+    ?>
+	<div class="container">
     <div class="row clearfix">
     	<div class="col-md-12 table-responsive">
 			<table class="table table-bordered table-hover table-sortable" id="tab_logic">

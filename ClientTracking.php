@@ -48,6 +48,9 @@
     </style>
 </head>
 <body>
+    <?php
+        include 'ClientsNavBar.php';
+    ?>
     <div class="container progressBar">
         <p>Order Status</p>
         <ul>

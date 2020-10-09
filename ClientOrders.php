@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- navbar css -->
+    <?php
+        include 'include/NavBarStyle.php';
+    ?>
+    
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="styles/ordersClient.css">
     <title>Orders</title>
