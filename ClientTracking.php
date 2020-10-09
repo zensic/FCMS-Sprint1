@@ -52,28 +52,33 @@
 </head>
 <body>
     <?php
-        include 'include/ClientsNavBar.php';
+        include 'ClientsNavBar.php';
+        include "backend/DatabaseConnect.php";
+        $db = new mysqli($SERVERNAME, $USERNAME, $PASSWORD, $DATABASE);
+        $sql = "SELECT * FROM Orders WHERE OrderID='1'";
+        $result = $db->query($sql);
+        $row = $result->fetch_assoc();
     ?>
     <div class="container progressBar">
         <p>Order Status</p>
         <ul>
-            <li>
+            <li <?php if($row["TrackingID"] > 0){echo "class='selected'";} ?>>
                 <span>Step 1</span>
                 <div>Invoice Issued</div>
             </li>
-            <li>
+            <li <?php if($row["TrackingID"] > 1){echo "class='selected'";} ?>>
                 <span>Step 2</span>
                 <div>Order Confirmed</div>
             </li>
-            <li>
+            <li <?php if($row["TrackingID"] > 2){echo "class='selected'";} ?>>
                 <span>Step 3</span>
                 <div>Event Preparing</div>
             </li>
-            <li>
+            <li <?php if($row["TrackingID"] > 3){echo "class='selected'";} ?>>
                 <span>Step 4</span>
                 <div>Event Preparation Completed</div>
             </li>
-            <li>
+            <li <?php if($row["TrackingID"] > 4){echo "class='selected'";} ?>>
                 <span>Step 5</span>
                 <div>Event completed</div>
             </li>
