@@ -11,15 +11,6 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="nav navbar-nav ml-auto smooth-scroll">
                         <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#menu">Menu</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="faq.html">About Us</a>
-                        </li>
-                        <li class="nav-item">
                         <a class="nav-link" href="contact.html">Login</a>
                         </li>
                     </ul>
