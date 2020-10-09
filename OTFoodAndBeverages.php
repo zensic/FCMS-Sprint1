@@ -2,7 +2,7 @@
 <html>
 	<head>
 	
-		<title>[OT] User Creation Page</title> 
+		<title>[OT] Food and Beverages</title> 
 		
 		<meta charset="utf-8">
 		<meta name = "viewport" content = "width=device-width, initial-scales">
