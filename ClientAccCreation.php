@@ -23,19 +23,6 @@
     <?php
         echo "<link rel='stylesheet' href='styles/ClientAccCreation_Style.css'>";
     ?>
-
-    <style>
-    body {
-        color: #999;
-        font-family: 'Quebec Serial Bold', sans-serif;
-        background-image: url("images/food.jpg");
-        background-color: white; /* Used if the image is not available */
-        height: auto; /* You must set a specified height */
-        background-position: center; /* Center the image */
-        background-repeat: no-repeat; /* Do not repeat the image */
-        background-size: cover; /* Resize the background image to cover the entire container */
-    }
-    </style>
 </head>
 
 <body>
