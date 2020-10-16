@@ -46,6 +46,8 @@
           <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#page-top">Home</a></li>
           <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#menu">Menu</a></li>
           <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="ClientOrders.php">Orders</a></li>
+          <li class="nav-item"><a class="nav-link" href="ClientTracking.php">Track</a></li>
           <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">Log In</a></li>
         </ul>
       </div>
@@ -118,7 +120,7 @@
       <div class="row">
         <div class="col-4">
           <div class="outer">
-            <a href="menu.php">
+            <a href="ClientMenu.php">
               <div class="upper">
                 <img src="images/chinese.jpg" class="img-rounded" alt="chinese food">
               </div>
@@ -130,7 +132,7 @@
         </div>
         <div class="col-4">
           <div class="outer">
-            <a href="menu.php">
+            <a href="ClientMenu.php">
               <div class="upper">
                 <img src="images/western.jpg" alt="western food">
               </div>
@@ -142,7 +144,7 @@
         </div>
         <div class="col-4">
           <div class="outer">
-            <a href="menu.php">
+            <a href="ClientMenu.php">
               <div class="upper">
                 <img src="images/mix.jpg" alt="mix package">
               </div>
