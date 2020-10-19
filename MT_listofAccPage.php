@@ -10,8 +10,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <!-- js variables for db connection -->
-    <script src="backend/DatabaseConnect.js"></script>
     <?php
         include 'include/NavBarStyle.php';
     ?>
@@ -20,31 +18,34 @@
 <body>
     <?php
         include 'include/MTNavBar.php';
-        include "backend/DatabaseConnect.php"; // global variables for connection
-    ?>
-    <script>
-        // accpets memberID in string
-        function deleteMember(aMemberID) {
-            var mysql = require('mysql');
-            var con = mysql.createConnection(
-                {
-                    host: SERVERNAME,
-                    user: USERNAME,
-                    password: PASSWORD,
-                    database: DATABASE
-                }
-            )
+        include 'backend/DatabaseConnect.php'; // global variables for connection
 
-            con.connect(
-                function(err) {
-                    if (err) throw err;
-                    console.log("Connected!");
-                    var sql = 
+        $db = new mysqli($SERVERNAME, $USERNAME, $PASSWORD, $DATABASE);
+
+        if(isset($_POST["submit"])) {
+            if(!empty($_POST["clients"])) {
+                foreach($_POST["clients"] as $client) {
+                    
+                    // deletes selected rows
+                    $sql = "DELETE FROM clients WHERE ClientID ='".$client."'";
+                    $db->query($sql);
                 }
-            )
+            }
+
+            if(!empty($_POST["operationTeam"])) {
+                foreach($_POST["operationTeam"] as $client) {
+
+                    // deletes selected rows
+                    $sql = "DELETE FROM operationteam WHERE OperationID =" + $client.toString();
+                    $db->query($sql);
+                }
+            }
         }
-    </script>
-    <div class="container">
+
+        // close connection
+        $db->close();
+    ?>
+    <form action="MT_listofAccPage.php" method="post" class="container">
         <div class="jumbotron">
             <div class="card">
                 <h5 class="card-header">List Of Client's Account</h5>
@@ -55,7 +56,7 @@
                                 <th scope="col">Client ID</th>
                                 <th scope="col">Name</th>
                                 <th scope="col">Login Email</th>
-                                <th scope="col">Action</th>
+                                <th scope="col">Delete</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -63,7 +64,7 @@
                             $db = new mysqli($SERVERNAME, $USERNAME, $PASSWORD, $DATABASE);
 
                             // fetches all data from the tables
-                            $sql = "SELECT * FROM ClientTeam";
+                            $sql = "SELECT * FROM Clients";
                             $result = $db->query($sql);
 
                             // print data a few times
@@ -75,7 +76,7 @@
                                         <td>'.$row["Username"].'</td>
                                         <td>'.$row["Email"].'</td>
                                         <td>
-                                            <button type="button" class="btn btn-secondary badge-pill btn_del">Delete</button>
+                                            <input type="checkbox" name="clients[]" value="'.$row["ClientID"].'"  class="form-check-input">
                                         </td>
                                     </tr>
                                     ';
@@ -99,7 +100,7 @@
                                 <th scope="col">Operation Team ID</th>
                                 <th scope="col">Name</th>
                                 <th scope="col">Login Email</th>
-                                <th scope="col">Action</th>
+                                <th scope="col">Delete</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -118,7 +119,7 @@
                                         <td>'.$row["Username"].'</td>
                                         <td>'.$row["Email"].'</td>
                                         <td>
-                                            <button type="button" class="btn btn-secondary badge-pill btn_del">Delete</button>
+                                            <input type="checkbox" name="operationTeam[]" value="'.$row["OperationID"].'"  class="form-check-input">
                                         </td>
                                     </tr>
                                     ';
@@ -134,7 +135,8 @@
                 </div>
             </div>
         </div>
-    </div>
+        <input type="submit" name="submit" value="Submit" class="btn btn-primary"/>
+    </form>
     <footer>
         <div class="container-fluid text-center  text-white" id="copyright">
             &copy; 2020. All right are Reserved by FoodEdge Gourmate
