@@ -16,43 +16,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="stylesheet/footer.css">
-  <style>
-   .copyright {
-    color: white;
-  }
-  
-  .footertext{
-    color:white;
-  }
-  .hometext{
-    color: #f2f4f3;
-    size: 2.5rem;
-  }
-  </style>
+  <?php
+        include 'include/NavBarStyle.php';
+  ?>
 </head>
 
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand" href="#page-top"><img src='images/logo.png' width='50' id="logo"></a>
-      <a class="navbar-brand js-scroll-trigger" href="#page-top" id="company">FoodEdge</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#page-top">Home</a></li>
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#menu">Menu</a></li>
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="ClientOrders.php">Orders</a></li>
-          <li class="nav-item"><a class="nav-link" href="ClientTracking.php">Track</a></li>
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">Log In</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <?php
+        include 'include/ClientsNavBar.php';
+    ?>
 
   <!--End of nav bar-->
   <!--Slide Show-->

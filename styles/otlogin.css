@@ -1,9 +1,7 @@
-/* Made with love by Mutiullah Samim*/
-
 @import url('https://fonts.googleapis.com/css?family=Numans');
 
 html,body{
-background-image: url('https://www.silvercube.com.hk/wp-content/uploads/2018/12/login-wallpaper-02.png');
+background-image: url('../images/background_2.jpg');
 background-size: cover;
 background-repeat: no-repeat;
 height: 100%;

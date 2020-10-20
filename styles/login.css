@@ -1,9 +1,7 @@
-/* Made with love by Mutiullah Samim*/
-
 @import url('https://fonts.googleapis.com/css?family=Numans');
 
 html,body{
-background-image: url('https://cdn.hipwallpaper.com/m/62/26/HKoPzd.jpg');
+background-image: url("../images/homeslide1.png");
 background-size: cover;
 background-repeat: no-repeat;
 height: 100%;
@@ -26,6 +24,7 @@ background-color: rgba(0,0,0,0.5) !important;
 
 
 .card-header h3{
+
 color: white;
 }
 
