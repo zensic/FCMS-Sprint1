@@ -119,7 +119,7 @@
                                         <td>'.$row["Username"].'</td>
                                         <td>'.$row["Email"].'</td>
                                         <td>
-                                            <input type="checkbox" name="operationTeam[]" value="'.$row["OperationID"].'"  class="form-check-input">
+                                            <input type="checkbox" name="operationTeam[]" id="checkboxstyle" value="'.$row["OperationID"].'"  class="form-check-input">
                                         </td>
                                     </tr>
                                     ';

@@ -10,10 +10,9 @@
                     </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="nav navbar-nav ml-auto smooth-scroll">
-                        <li class="nav-item">
-                        <a class="nav-link" href="OTCateringPackage1.php">Menu</a>
-                        <a class="nav-link" href="OTUpdateOrders.php">Track</a>
-                        <a class="nav-link" href="ClientHome.php">Logout</a>
+                        <li class="nav-item"><a class="nav-link" href="OTCateringPackage1.php">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="OTUpdateOrders.php">Track</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ClientHome.php">Logout</a></li>
                         </li>
                     </ul>
                 </div>
@@ -22,4 +21,3 @@
     '
     
 ?>
-
