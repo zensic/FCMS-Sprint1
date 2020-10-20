@@ -63,17 +63,19 @@
 							<td data-name="sel">
 								    <select name="sel0">
 								<option value="">Package Option</option>
-								<option value="1">Package 1</option>
-								<option value="2">Package 2</option>
-								<option value="3">Package 3</option>
+								<option value="1">Western</option>
+								<option value="2">Chinese</option>
+								<option value="3">MIx</option>
 								    </select>
 								</td>
 								<td data-name="sel">
 								    <select name="orderStatus">
 								<option value="">Order Status</option>
-								<option value="Pending">Pending</option>
-								<option value="In-progress">In-progress</option>
-								<option value="Complete">Complete</option>
+								<option value="Invoice issued">Invoice issued</option>
+								<option value="Order Confirmed">Order Confirmed</option>
+								<option value="Event preparing">Event preparing</option>
+								<option value="Event preparations completed">Event preparations completed</option>
+								<option value="Event dismantled">Event dismantled</option>
 								    </select>
 								</td>
 					<td data-name="del">
