@@ -10,8 +10,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <title>OT | Catering Menu</title>
   <?php
-        include 'include/NavBarStyle.php';
-    ?>
+    include 'include/NavBarStyle.php';
+    include 'include/StringPath.php';
+  ?>
 </head>
 
 <body>
@@ -28,7 +29,7 @@
       <div class="row">
         <div class="col-md-4 col-sm-6">
           <div class="product-grid2">
-            <div class="product-image2"> <a href="#"> <img class="pic-1" src="images/menu1.png"> </a>
+            <div class="product-image2"> <a href="#"> <img class="pic-1" src=<?php echo $image_packageA ?>> </a>
             </div>
             <div class="product-content">
               <h3 class="title"><a href="#">Chinese Cursine</a></h3>
@@ -38,7 +39,7 @@
         </div>
         <div class="col-md-4 col-sm-6">
           <div class="product-grid2 ">
-            <div class="product-image2"> <a href="#"> <img class="pic-1" src="images/menu2.png"> </a>
+            <div class="product-image2"> <a href="#"> <img class="pic-1" src=<?php echo $image_packageB ?>> </a>
 
             </div>
             <div class="product-content">
@@ -49,7 +50,7 @@
         </div>
         <div class="col-md-4 col-sm-6">
           <div class="product-grid2">
-            <div class="product-image2"> <a href="#"> <img class="pic-1" src="images/menu3.png"> </a>
+            <div class="product-image2"> <a href="#"> <img class="pic-1" src=<?php echo $image_packageC ?>> </a>
             </div>
             <div class="product-content">
               <h3 class="title"><a href="#">Mix Cursine</a></h3>

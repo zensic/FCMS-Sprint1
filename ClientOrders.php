@@ -24,7 +24,7 @@
                     <img class="img-fluid rounded img-thumbnail" src="images/ordersClient/chinese-cuisine-mini.png">
                 </div>
                 <div class="col-md-10 col-sm-8">
-                    <p>Chinese Cuisine</p>
+                    <p>Package A</p>
                     <p>Lorem ipsum dolor sit amet, sed an mutat numquam accusata, an vim tale nonumy neglegentur. Sed ut viris vidisse ceteros, et cum inermis antiopam definitiones. Melius integre at qui, eum deleniti oportere eu, no quo vituperata argumentum cotidieque. Quidam appareat persequeris ex nam. Eu vix enim animal, regione accumsan consectetuer nec in, ut quaeque inciderint pri.</p>
                 </div>
             </div>
@@ -34,7 +34,7 @@
                     <img class="img-fluid rounded img-thumbnail" src="images/ordersClient/malay-cuisine-mini.png">
                 </div>
                 <div class="col-md-10 col-sm-8">
-                    <p>Malay Cuisine</p>
+                    <p>Package B</p>
                     <p>Lorem ipsum dolor sit amet, sed an mutat numquam accusata, an vim tale nonumy neglegentur. Sed ut viris vidisse ceteros, et cum inermis antiopam definitiones. Melius integre at qui, eum deleniti oportere eu, no quo vituperata argumentum cotidieque. Quidam appareat persequeris ex nam. Eu vix enim animal, regione accumsan consectetuer nec in, ut quaeque inciderint pri.</p>
                 </div>
             </div>

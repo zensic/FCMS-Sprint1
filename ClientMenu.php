@@ -21,13 +21,14 @@
 
 <?php
         include 'include/ClientsNavBar.php';
+        include 'include/StringPath.php';
     ?>
 
   <section id="detail">
       <div class="container">
           <div class="row justify-content-center">
               <div class="col-lg-4 col-md-6 col-sm-6 col-5" id="selected-image">
-                  <img src="images/chinese.jpg" width="250" alt="western food" id="selected">
+                  <img src="<?php echo $image_packageA ?>" width="250" alt="western food" id="selected">
               </div>
               <div class="col-lg-4 col-md-6 col-sm-6 col-5" id="selected-detail">
                   <p>Package A</p>
@@ -57,7 +58,7 @@
                   <div class="outer">
                       <a href="#">
                           <div class="upper">
-                              <img src="images/western.jpg" alt="western food">
+                              <img src="<?php echo $image_packageB ?>" alt="western food">
                           </div>
                           <div class="lower">
                               <span>Catering Package B</span>
@@ -69,7 +70,7 @@
                   <div class="outer">
                       <a href="#">
                           <div class="upper">
-                              <img src="images/mix.jpg" alt="mix package">
+                              <img src=<?php echo $image_packageC ?> alt="mix package">
                           </div>
                           <div class="lower">
                               <span>Catering Package C</span>

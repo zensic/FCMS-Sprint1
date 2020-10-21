@@ -14,7 +14,9 @@
     <?php
         include 'include/OTNavBar.php';
     ?>
-    <div class="container">
+    <div class="container jumbotron">
+        <h1 class="text-center">Package A</h1>
+        <hr class="hr">
         <form>
             <div class="row">
                 <div class="col-md-2 col-sm-4">
