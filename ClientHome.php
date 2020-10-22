@@ -17,7 +17,7 @@
   
   <link rel="stylesheet" href="stylesheet/footer.css">
   <?php
-        include 'include/NavBarStyle.php';
+    include 'include/NavBarStyle.php';
   ?>
 </head>
 
@@ -25,8 +25,9 @@
 
   <!-- Navigation -->
   <?php
-        include 'include/ClientsNavBar.php';
-    ?>
+    include 'include/ClientsNavBar.php';
+    include 'include/StringPath.php';
+  ?>
 
   <!--End of nav bar-->
   <!--Slide Show-->
@@ -96,7 +97,7 @@
           <div class="outer">
             <a href="ClientMenu.php">
               <div class="upper">
-                <img src="images/chinese.jpg" class="img-rounded" alt="chinese food">
+                <img src=<?php echo $image_packageA ?> class="img-rounded" alt="chinese food">
               </div>
               <div class="lower">
                 <span>Catering Package A</span>
@@ -108,7 +109,7 @@
           <div class="outer">
             <a href="ClientMenu.php">
               <div class="upper">
-                <img src="images/western.jpg" alt="western food">
+                <img src=<?php echo $image_packageB ?> alt="western food">
               </div>
               <div class="lower">
                 <span>Catering Package B</span>
@@ -120,7 +121,7 @@
           <div class="outer">
             <a href="ClientMenu.php">
               <div class="upper">
-                <img src="images/mix.jpg" alt="mix package">
+                <img src=<?php echo $image_packageC ?> alt="mix package">
               </div>
               <div class="lower">
                 <span>Catering Package C</span>
