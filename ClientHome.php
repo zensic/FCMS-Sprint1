@@ -44,12 +44,25 @@
       <div class="item active">
         <div class="slide1"></div>
         <div class="carousel-caption">
-          <h1 class='hometext'>Welcome To Foodedge Gourmate</h1>
-
+          <h1>Welcome To Foodedge Gourmate</h1>
+          <p>Best Catering services in Kuching Sarawak</p>
 
         </div>
       </div>
-     
+      <div class="item">
+        <div class="slide2"></div>
+        <div class="carousel-caption">
+          <h1>Welcome To Foodedge Gourmate</h1>
+          <p>Best Catering services in Kuching Sarawak</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="slide3"></div>
+        <div class="carousel-caption">
+          <h1>Welcome To Foodedge Gourmate</h1>
+          <p>Best Catering services in Kuching Sarawak</p>
+        </div>
+      </div>
     </div>
 
 
