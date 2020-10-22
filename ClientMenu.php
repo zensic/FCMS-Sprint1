@@ -31,7 +31,7 @@
                   <img src="<?php echo $image_packageA ?>" width="250" alt="western food" id="selected">
               </div>
               <div class="col-lg-4 col-md-6 col-sm-6 col-5" id="selected-detail">
-                  <p>Package A</p>
+                  <p>Chinese Catering Package</p>
                   <p>RM 500</p>
                   <p>Menu Detail</p>
                   <ul class="infomation">
@@ -61,7 +61,7 @@
                               <img src="<?php echo $image_packageB ?>" alt="western food">
                           </div>
                           <div class="lower">
-                              <span>Catering Package B</span>
+                              <span>Western Catering Package</span>
                           </div>
                       </a>
                   </div>
@@ -73,7 +73,7 @@
                               <img src=<?php echo $image_packageC ?> alt="mix package">
                           </div>
                           <div class="lower">
-                              <span>Catering Package C</span>
+                              <span>Mix Catering Package</span>
                           </div>
                       </a>
                   </div>

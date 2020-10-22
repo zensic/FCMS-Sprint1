@@ -80,7 +80,7 @@
 				$FB_Link = mysqli_real_escape_string($db, sanitise_input($_POST['OT_FacebookLink']));
 				$password = mysqli_real_escape_string($db, sanitise_input($_POST['OT_password']));
 
-				$sql = "INSERT INTO employee (username, password, facebookLink) VALUES ('$username','$password','$FB_Link')";
+				$sql = "INSERT INTO operationteam (Username, Password, FacebookLink) VALUES ('$username','$password','$FB_Link'')";
 				// execute query
 				/*if (mysqli_query($db, $sql)){
 					echo"Successfully insert<br/>";	

@@ -32,7 +32,7 @@
             <div class="product-image2"> <a href="#"> <img class="pic-1" src=<?php echo $image_packageA ?>> </a>
             </div>
             <div class="product-content">
-              <h3 class="title"><a href="#">Chinese Cursine</a></h3>
+              <h3 class="title"><a href="#"><?php echo 'Chinese Cuisine' ?></a></h3>
               <button type="button" class="btn btn-secondary badge-pill " id="btn_edit"> Edit </button>
             </div>
           </div>

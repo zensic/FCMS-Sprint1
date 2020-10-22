@@ -114,7 +114,7 @@
 				if($numRows > 0){
 					echo "</br><b>".$numRows." Result Found!"."</b></br>";
 					while($row = mysqli_fetch_assoc($result)){
-						if($date == $row['order_Date']){
+						if($date == $row['OrderDate']){
 							echo "Date clashed!";
 						}
 						else{
@@ -129,7 +129,7 @@
                 $ordr_ID = mysqli_real_escape_string($db, $_POST['orderID']);
                 $ordrStatus = mysqli_real_escape_string($db, $_POST['orderStatus']);
 
-				$sql2 = "UPDATE orders SET status='$ordrStatus' WHERE orderID='$ordr_ID'";
+				$sql2 = "UPDATE orders SET TrackingStatus='$ordrStatus' WHERE OrderID='$ordr_ID'";
 				
 				//Check update to table
 				if (mysqli_query($db, $sql2)) {

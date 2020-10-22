@@ -157,7 +157,7 @@
     </div>
 
     <!--Insert a new client account-->
-	<!--?php	
+	<?php	
 		// Create database connection
 		$db = mysqli_connect("localhost", "root", "", "fcms");
 				
@@ -198,7 +198,7 @@
             $phoneNum = mysqli_real_escape_string($db, sanitise_input($_POST['phone_number']));
             $address = mysqli_real_escape_string($db, sanitise_input($_POST['floor_unit'].$_POST['street_address'].$_POST['city'].$_POST['state'].$_POST['zip_code']));
 
-            $sql2 = "INSERT INTO client (client_ID, member_ID, username, email, password, phone_number, address) VALUES ('$clientID', 001,'$username', '$email','$password', '$phoneNum', '$address')";
+            $sql2 = "INSERT INTO client (ClientID, MemberID, Username, Email, Password, PhoneNumber, Address) VALUES (''$clientID', 001,'$username', '$email','$password', '$phoneNum', '$address')";
 			// execute query
 			if (mysqli_query($db, $sql2)){
 				echo"<br/>Successfully insert<br/>";	
@@ -207,6 +207,6 @@
 			}
 		}
 		$db->close();
-	?-->
+    ?>
 </body>
 </html>
