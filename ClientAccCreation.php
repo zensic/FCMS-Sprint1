@@ -198,7 +198,7 @@
             $phoneNum = mysqli_real_escape_string($db, sanitise_input($_POST['phone_number']));
             $address = mysqli_real_escape_string($db, sanitise_input($_POST['floor_unit'].$_POST['street_address'].$_POST['city'].$_POST['state'].$_POST['zip_code']));
 
-            $sql2 = "INSERT INTO client (ClientID, MemberID, username, Email, Password, PhoneNumber, Address) VALUES (''$clientID', 001,'$username', '$email','$password', '$phoneNum', '$address')";
+            $sql2 = "INSERT INTO client (ClientID, MemberID, Username, Email, Password, PhoneNumber, Address) VALUES (''$clientID', 001,'$username', '$email','$password', '$phoneNum', '$address')";
 			// execute query
 			if (mysqli_query($db, $sql2)){
 				echo"<br/>Successfully insert<br/>";	
