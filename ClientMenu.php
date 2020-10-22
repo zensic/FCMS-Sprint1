@@ -20,30 +20,30 @@
 <body id="page-top">
 
 <?php
-        include 'include/ClientsNavBar.php';
-        include 'include/StringPath.php';
-    ?>
+    include 'include/ClientsNavBar.php';
+    include 'include/StringPath.php';
+?>
 
-  <section id="detail">
-      <div class="container">
-          <div class="row justify-content-center">
-              <div class="col-lg-4 col-md-6 col-sm-6 col-5" id="selected-image">
-                  <img src="<?php echo $image_packageA ?>" width="250" alt="western food" id="selected">
-              </div>
-              <div class="col-lg-4 col-md-6 col-sm-6 col-5" id="selected-detail">
-                  <p>Chinese Catering Package</p>
-                  <p>RM 500</p>
-                  <p>Menu Detail</p>
-                  <ul class="infomation">
-                    <li>Chinese Fried Rice</li>
-                    <li>Breaised Noodles</li>
-                    <li>Seafood with Chilli Crab Sauce</li>
-                    <li>Omelette</li>
-                    <li>Mixed Fresh Fruits</li>
-                  </ul>
-              </div>
-          </div>
-      </div>
+<section id="detail">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-5" id="selected-image">
+                <img src="<?php echo $image_packageA ?>" width="250" alt="western food" id="selected">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-5" id="selected-detail">
+                <p>Chinese Catering Package</p>
+                <p>RM 500</p>
+                <p>Menu Detail</p>
+                <ul class="infomation">
+                <li>Chinese Fried Rice</li>
+                <li>Breaised Noodles</li>
+                <li>Seafood with Chilli Crab Sauce</li>
+                <li>Omelette</li>
+                <li>Mixed Fresh Fruits</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section id="other">
