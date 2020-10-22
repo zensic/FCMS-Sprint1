@@ -58,7 +58,7 @@
 
 								</td>
 								<td data-name="name">
-								    <input type="text" name='mail0' placeholder='Order Date' class="form-control"/>
+								    <input type="text" name='mail0' placeholder='Client name' class="form-control"/>
 								</td>
 							<td data-name="sel">
 								    <select name="sel0">
