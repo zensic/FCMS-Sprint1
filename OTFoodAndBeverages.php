@@ -22,8 +22,8 @@
 	<?php
 		include 'include/OTNavBar.php';
 		?>
-	<div class="container-fluid">
-		<div class="row col-lg-12">
+	<div class="container" style="margin-top: 70px;">
+		<div class="row col-lg-12 mx-auto">
 			<?php
 				include "backend/DatabaseConnect.php";
 
@@ -46,7 +46,7 @@
 							<span>'.$row["FoodName"].'</span>
 						</div>
 						<div class="col-5 text-right each_cont">
-							<button type="submit" class="btn btn-warning btn-center">Edit</button>
+							<button type="submit" class="btn btn-warning btn-center dropdown-toggle">Edit</button>
 						</div>
 						';
 					}
