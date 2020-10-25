@@ -46,7 +46,12 @@
 							<span>'.$row["FoodName"].'</span>
 						</div>
 						<div class="col-5 text-right each_cont">
-							<button type="submit" class="btn btn-warning btn-center dropdown-toggle">Edit</button>
+							<form class="row">
+								<div class="form" style="margin-right: 15px;">
+									<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Edit Name">
+								</div>
+								<button type="submit" class="btn btn-warning btn-center">Edit</button>
+							</form>
 						</div>
 						';
 					}
