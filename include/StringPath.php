@@ -28,5 +28,4 @@ $image_packageC = $row["ImagePath"];
 
 // close db
 $db->close();
-
 ?>

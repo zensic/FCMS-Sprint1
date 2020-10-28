@@ -9,7 +9,6 @@
   <title>OT | Catering Menu</title>
   <?php
     include 'include/NavBarStyle.php';
-    include 'include/StringPath.php';
   ?>
 </head>
 
@@ -23,36 +22,23 @@
   </div>
   <div class="container" >
     <div class="row">
-      <div class="col-md-4 col-sm-6">
-        <div class="product-grid2">
-          <div class="product-image2">
-            <a href="OTCateringPackage2.php"> <img class="pic-1" src=<?php echo $image_packageA ?>> </a>
+      <?php
+        include 'include/CateringPackageList.php';
+        for ($cateringPackages->rewind(); $cateringPackages->valid(); $cateringPackages->next()) {
+          $package = $cateringPackages->current();
+          echo '      <div class="col-md-4 col-sm-6">
+          <div class="product-grid2">
+            <div class="product-image2">
+              <a href="OTCateringPackage2.php"> <img class="pic-1" src='.$package->get_imagePath().'> </a>
+            </div>
+            <div class="product-content">
+              <button type="button" class="btn btn-secondary badge-pill " id="btn_edit"><a href="OTCateringPackage2.php">Edit '.$package->get_name().'</a></button>
+            </div>
           </div>
-          <div class="product-content">
-            <button type="button" class="btn btn-secondary badge-pill " id="btn_edit"><a href="OTCateringPackage2.php">Edit <?php echo $name_packageA ?></a></button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="product-grid2 ">
-          <div class="product-image2"> 
-            <a href="OTCateringPackage2.php"> <img class="pic-1" src=<?php echo $image_packageB ?>> </a>
-          </div>
-          <div class="product-content">
-            <button type="button" class="btn btn-secondary badge-pill " id="btn_edit"><a href="OTCateringPackage2.php">Edit <?php echo $name_packageB ?></a></button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="product-grid2">
-          <div class="product-image2">
-            <a href="OTCateringPackage2.php"> <img class="pic-1" src=<?php echo $image_packageC ?>> </a>
-          </div>
-          <div class="product-content">
-            <button type="button" class="btn btn-secondary badge-pill " id="btn_edit"><a href="OTCateringPackage2.php">Edit <?php echo $name_packageC ?></a></button>
-          </div>
-        </div>
-      </div>
+        </div>';
+        }
+      ?>
+      
     </div>
   </div>
 </body>
