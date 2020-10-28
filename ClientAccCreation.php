@@ -11,7 +11,7 @@
     
     <!-- navbar css -->
     <?php
-        //include 'include/NavBarStyle.php';
+        include 'include/NavBarStyle.php';
     ?>
     
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
@@ -27,7 +27,7 @@
 
 <body>
     <?php
-        //include 'include/ClientsNavBar.php';
+        include 'include/ClientsNavBar.php';
     ?>
     
     <div class="signup-form">
