@@ -11,7 +11,7 @@
     
     <!-- navbar css -->
     <?php
-        include 'include/NavBarStyle.php';
+        //include 'include/NavBarStyle.php';
     ?>
     
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
@@ -27,7 +27,7 @@
 
 <body>
     <?php
-        include 'include/ClientsNavBar.php';
+        //include 'include/ClientsNavBar.php';
     ?>
     
     <div class="signup-form">
@@ -188,7 +188,7 @@
             $memberID = rand(1,200);
             if(isset($_POST['createMembership'])){
                 $point = 0;
-                $sql1 = "INSERT INTO member (member_ID,member_point) VALUES ('$memberID','$point')";
+                $sql1 = "INSERT INTO members (MemberID,MemberPoint) VALUES ('$memberID','$point')";
                 // execute query
 			    if (mysqli_query($db, $sql1)){
 				    echo"<br/>Successfully insert member<br/>";	
@@ -198,7 +198,6 @@
             }
 
             //Escape special characters for $db connection
-            $clientID = rand(1,200);
 			$username = mysqli_real_escape_string($db, sanitise_input($_POST['username']));
             $email = mysqli_real_escape_string($db, sanitise_input($_POST['email']));
             $password = mysqli_real_escape_string($db, sanitise_input($_POST['password']));
