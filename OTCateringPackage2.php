@@ -8,12 +8,12 @@
     <title>CRUD Catering Packages</title>
     <?php
         include 'include/NavBarStyle.php';
+        include 'include/StringPath.php';
     ?>
 </head>
 <body>
     <?php
         include 'include/OTNavBar.php';
-        include 'include/StringPath.php';
     ?>
     <div class="container jumbotron" style="margin-top: 50px;">
         <h1 class="text-center">Package A</h1>
