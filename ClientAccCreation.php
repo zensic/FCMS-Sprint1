@@ -16,7 +16,7 @@
     
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <title>Client Create Account</title>
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -63,10 +63,17 @@
                             <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
                         </div>
                     </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="fa fa-phone"></i>
+                        </span>
+                        <input type="tel" class="form-control" name="phone_number" placeholder="Phone number" required="required">
+                    </div>
                 </div>
             </div>
 
-        <!--Personal details card-->
+        <!--Personal details card->
         <div class="card text-white" style="width: 330px">
           <div class="card-header"><h3>Personal Details</h3></div>
           <div class="card-body">
@@ -77,7 +84,7 @@
                     </span>
                     <input type="tel" class="form-control" name="phone_number" placeholder="Phone number" required="required">
                 </div>
-            </div>
+            </div->
 
 
             <!--Address-->
@@ -137,9 +144,9 @@
                     </span>
                     <input type="text" class="form-control" name="zip_code" placeholder="Zip Code" required="required">
                 </div>
-            </div-->
+            </div>
           </div>
-        </div>
+        </div-->
 
             <div class="custom-control custom-checkbox">
                 <input type="checkbox" class="custom-control-input" id="membershipCheckBox" name="createMembership">
