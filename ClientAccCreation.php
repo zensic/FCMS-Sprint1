@@ -81,7 +81,7 @@
 
 
             <!--Address-->
-            <div class="form-group">
+            <!--div class="form-group">
                 <div class="input-group">
                     <span class="input-group-addon">
                         <i class="fa fa-home"></i>
@@ -137,7 +137,7 @@
                     </span>
                     <input type="text" class="form-control" name="zip_code" placeholder="Zip Code" required="required">
                 </div>
-            </div>
+            </div-->
           </div>
         </div>
 
@@ -196,9 +196,9 @@
             $email = mysqli_real_escape_string($db, sanitise_input($_POST['email']));
             $password = mysqli_real_escape_string($db, sanitise_input($_POST['password']));
             $phoneNum = mysqli_real_escape_string($db, sanitise_input($_POST['phone_number']));
-            $address = mysqli_real_escape_string($db, sanitise_input($_POST['floor_unit'].$_POST['street_address'].$_POST['city'].$_POST['state'].$_POST['zip_code']));
+            //$address = mysqli_real_escape_string($db, sanitise_input($_POST['floor_unit'].$_POST['street_address'].$_POST['city'].$_POST['state'].$_POST['zip_code']));
 
-            $sql2 = "INSERT INTO client (ClientID, MemberID, Username, Email, Password, PhoneNumber, Address) VALUES (''$clientID', 001,'$username', '$email','$password', '$phoneNum', '$address')";
+            $sql2 = "INSERT INTO client (ClientID, Username, Email, Password, PhoneNumber) VALUES ('$clientID','$username', '$email','$password', '$phoneNum')";
 			// execute query
 			if (mysqli_query($db, $sql2)){
 				echo"<br/>Successfully insert<br/>";	
