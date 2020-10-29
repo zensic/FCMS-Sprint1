@@ -18,7 +18,7 @@
     include 'include/OTNavBar.php';
   ?>
   <div >
-  <div class="container" >
+  <div class="container" style="margin-top: 90px;">
     <h1 class="text-center">Catering Menu</h1>
   </div>
   <div class="container" >
@@ -34,7 +34,7 @@
         </div>
       </div>
       <div class="col-md-4 col-sm-6">
-        <div class="product-grid2 ">
+        <div class="product-grid2">
           <div class="product-image2"> 
             <a href="OTCateringPackage2.php"> <img class="pic-1" src=<?php echo $image_packageB ?>> </a>
           </div>
