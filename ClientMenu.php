@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,7 +37,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6 col-5" id="selected-detail">
                 <p>Chinese Catering Package</p>
                 <p>RM 500</p>
-                <p>Menu Detail</p>
+                <p>Menu Details</p>
                 <ul class="infomation">
                 <li>Chinese Fried Rice</li>
                 <li>Breaised Noodles</li>
@@ -41,6 +45,14 @@
                 <li>Omelette</li>
                 <li>Mixed Fresh Fruits</li>
                 </ul>
+                <?php
+                    $_SESSION["price"] = "500";
+                    $_SESSION["cName"] = "Chinese cuisines";
+                ?>
+                <div>
+                    <button type="button" onclick="location.href='ClientCheckout.php'" name="checkOut_catering" class="btn btn-primary btn-block btn-lg p-3 mb-2 bg-warning text-dark border-0">Checkout</button>
+                </div>
+
             </div>
         </div>
     </div>
@@ -70,7 +82,7 @@
                   <div class="outer">
                       <a href="#">
                           <div class="upper">
-                              <img src=<?php echo $image_packageC ?> alt="mix package">
+                              <img src="<?php echo $image_packageC?>" alt="mix package">
                           </div>
                           <div class="lower">
                               <span>Mix Catering Package</span>
