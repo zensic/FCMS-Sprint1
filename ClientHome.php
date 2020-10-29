@@ -12,10 +12,10 @@
   <link rel="stylesheet" href="styles/client_homepage.css">
   <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  
+
   <link rel="stylesheet" href="stylesheet/footer.css">
   <?php
-    include 'include/NavBarStyle.php';
+  include 'include/NavBarStyle.php';
   ?>
 </head>
 
@@ -23,9 +23,31 @@
 
   <!-- Navigation -->
   <?php
-    include 'include/ClientsNavBar.php';
-    include 'include/StringPath.php';
+  include 'include/ClientsNavBar.php';
+  include 'include/StringPath.php';
   ?>
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml: true,
+        version: 'v8.0'
+      });
+    };
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <!-- Your Chat Plugin code -->
+  <div class="fb-customerchat" attribution=setup_tool page_id="101015995130353" theme_color="#d4a88c" logged_in_greeting="Hi there!!! How can we help you?" logged_out_greeting="Hi there!!! How can we help you?">
+  </div>
 
   <!--End of nav bar-->
   <!--Slide Show-->
@@ -172,26 +194,28 @@
 
   <!-- Footer -->
 
-  <footer   id="footercolor">
+  <footer id="footercolor">
     <div id="footerimage">
       <div class="container py-12">
         <div class="row text-center">
-          <div class="col-lg-12 "id="footertext">
-           
+          <div class="col-lg-12 " id="footertext">
+
             <div class="footertext">
-            <h4>About Us</h4>
-            <h4> 082-8865234<h4>
-            <h4>enquiry@foodedge.com</h4>
-            <h4>Jalan Song</h4>
-            <h4>Kuching, Sarawak, Malaysia</h4>
+              <h4>About Us</h4>
+              <h4> 082-8865234<h4>
+                  <h4>enquiry@foodedge.com</h4>
+                  <h4>Jalan Song</h4>
+                  <h4>Kuching, Sarawak, Malaysia</h4>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container-fluid text-center bg-secondary" >
+    <div class="container-fluid text-center bg-secondary">
       <h4 class="copyright">&copy; 2020. All right are Reserved by FoodEdge Gourmate</h4>
     </div>
+    <!-- Load Facebook SDK for JavaScript -->
+
 
   </footer>
 
