@@ -24,7 +24,6 @@
 	<body>
 		<?php
 			include 'include/OTNavBar.php';
-			include 'include/StringPath.php';
 		?>
 		<div class="container">
 			<form method="post">

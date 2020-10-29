@@ -15,7 +15,7 @@
     <?php
         include 'include/OTNavBar.php';
     ?>
-    <div class="container jumbotron" style="margin-top: 50px;">
+    <div class="container jumbotron" style="margin-top: 100px;">
         <h1 class="text-center">Package A</h1>
         <hr class="hr">
         <form>
