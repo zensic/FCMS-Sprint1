@@ -11,7 +11,7 @@
   <!-- Custom styles for this template -->
   <link rel="stylesheet" href="styles/client_homepage.css">
   <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
 
   <link rel="stylesheet" href="stylesheet/footer.css">
   <?php
@@ -51,32 +51,31 @@
 
   <!--End of nav bar-->
   <!--Slide Show-->
-  <div id="theCarousel" class="carousel slide" data-ride="carousel">
+  <div id="theCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
 
-    <ol class="carousel-indicators">
+    <ul class="carousel-indicators">
       <li data-target="#theCarousel" data-slide-to="0" class="active"> </li>
       <li data-target="#theCarousel" data-slide-to="1"> </li>
       <li data-target="#theCarousel" data-slide-to="2"> </li>
-    </ol>
+    </ul>
 
     <!-- Define the text to place over the image -->
-    <div class="carousel-inner">
-      <div class="item active">
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
         <div class="slide1"></div>
         <div class="carousel-caption">
           <h1>Welcome To Foodedge Gourmate</h1>
           <p>Best Catering services in Kuching Sarawak</p>
-
         </div>
       </div>
-      <div class="item">
+      <div class="carousel-item">
         <div class="slide2"></div>
         <div class="carousel-caption">
           <h1>Welcome To Foodedge Gourmate</h1>
           <p>Best Catering services in Kuching Sarawak</p>
         </div>
       </div>
-      <div class="item">
+      <div class="carousel-item">
         <div class="slide3"></div>
         <div class="carousel-caption">
           <h1>Welcome To Foodedge Gourmate</h1>
@@ -86,11 +85,11 @@
     </div>
 
 
-    <a class="left carousel-control" href="#theCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"> </span>
+    <a class="carousel-control-prev" href="#theCarousel" data-slide="prev">
+      <span class="carousel-control-prev-icon"> </span>
     </a>
-    <a class="right carousel-control" href="#theCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
+    <a class="carousel-control-next" href="#theCarousel" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
     </a>
   </div>
   <!-- Endof slide show-->
@@ -99,10 +98,10 @@
 
   <!--about start-->
 
-  <div class="container-fluid padding" id="aboutushome">
+  <div class="container-fluid" id="aboutushome" style="padding-top: 15px;">
     <div class="row welcome text-center text-white">
       <div class="col-12">
-        <h1 class="display-5"> FoodEdge Gourmate Catering Service for All You Need In Afforadable Price </h1>
+        <h3 class="display-5"> FoodEdge Gourmate Catering Service for All You Need In Afforadable Price </h3>
       </div>
       <hr>
       <div class="col-12">
@@ -218,9 +217,6 @@
 
 
   </footer>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>
 
